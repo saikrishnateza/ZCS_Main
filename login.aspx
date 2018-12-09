@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="ZCS.login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="ZCS.login" %>
 
 <!DOCTYPE html>
 <html>
@@ -140,7 +140,7 @@
                     </div>
                     <div class="col-md-4" id="divMain" style="margin-top: 185px">
                         <h1 align="center" style="font-family: AaronBold">LOGIN</h1>
-                        <h3 align="center" style="font-family: AaronBold;color:red">
+                        <h3 align="center" style="font-family: AaronBold; color: red">
                             <asp:Label ID="lblMsg" runat="server"></asp:Label>
                         </h3>
                         <label id="lblUname" ng-show="showuname" class="ng-hide"><b>Username</b></label>
