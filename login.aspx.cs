@@ -23,13 +23,13 @@ namespace ZCS
             if (usersData.BoolPropery == 1)
             {
                 Session["username_ZCS"] = usersData.UserId;
-                Response.Redirect("Member/userHome.aspx");
+                Response.Redirect("Member/index.html");
             }
-            else if (usersData.BoolPropery == 0)
+            else if (usersData.BoolPropery == 2)
             {
                 lblMsg.Text = "Your Account was Deactivated,Please Contact Admin.";
             }
-            else if(usersData.BoolPropery == 2)
+            else if(usersData.BoolPropery == 0)
             {
                 lblMsg.Text = "Invalid Credentials";
             }
@@ -38,7 +38,6 @@ namespace ZCS
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            //Checking Login Details
             users = new userFields();
             LoginCall(users);
         }
